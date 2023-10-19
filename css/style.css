@@ -1,0 +1,130 @@
+@import url(./normalize.css);
+@import url(./reset.css);
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto");
+  src: url(../fonts/Roboto-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto");
+  src: url(../fonts/Roboto-Black.ttf);
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway");
+  src: url(../fonts/Raleway-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto";
+}
+
+body {
+  background: url(../img/background.png) center / cover no-repeat;
+}
+
+/* Support Classes */
+.abs {
+  position: absolute;
+}
+.rel {
+  position: relative;
+}
+.flex-cen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+/* End Support Classes */
+
+main {
+  width: 100%;
+  height: 100vh;
+}
+section:hover {
+  width: 300px;
+  height: 50vh;
+  background-color: white;
+  filter: opacity(0.8);
+  -webkit-filter: opacity(0.8);
+  border: none;
+  border-radius: 20px;
+}
+.title-box {
+  margin-bottom: 20px;
+}
+.title-box > a > img {
+  width: 150px;
+}
+.form-line {
+  width: 210px;
+  margin-bottom: 0;
+}
+.form-line:last-of-type {
+  margin-bottom: 40px;
+}
+svg {
+  right: 4%;
+  top: 22%;
+}
+input[type="text"] {
+  width: 100%;
+  height: 36px;
+  background: #f5f5f5;
+  border: none;
+  border-radius: 5px 5px 0px 0px;
+  outline: none;
+  border-bottom: 1px solid #cfd8dc;
+  padding: 2px 0px 2px 15px;
+}
+input[type="password"] {
+  width: 100%;
+  height: 36px;
+  background: #f5f5f5;
+  border: none;
+  border-radius: 0px 0px 5px 5px;
+  outline: none;
+  border-top: 1px solid #cfd8dc;
+  padding: 2px 0px 2px 15px;
+}
+
+input::placeholder {
+  color: rgba(0, 0, 0, 0.44);
+  font-family: "Raleway";
+  font-size: 12px;
+}
+input[value] {
+  width: 210px;
+  height: 36px;
+  border: none;
+  border-radius: 5px;
+  background: #013453;
+  color: white;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  filter: drop-shadow(
+    0px 1.4421970844268799px 1.2018307447433472px rgba(0, 0, 0, 0.55)
+  );
+}
